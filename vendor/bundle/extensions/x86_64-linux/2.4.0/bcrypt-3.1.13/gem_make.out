@@ -1,0 +1,19 @@
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+/usr/share/rvm/rubies/ruby-2.4.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.4.1/lib/ruby/site_ruby/2.4.0 -r ./siteconf20200111-9075-1p765ci.rb extconf.rb
+creating Makefile
+
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR=" clean
+
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR="
+compiling bcrypt_ext.c
+compiling crypt_blowfish.c
+gcc  -D__SKIP_GNU     -c -o x86.o x86.S
+compiling crypt_gensalt.c
+compiling wrapper.c
+linking shared-object bcrypt_ext.so
+
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/bcrypt-3.1.13/ext/mri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bcrypt_ext.so ./.gem.20200111-9075-1mejr5y
