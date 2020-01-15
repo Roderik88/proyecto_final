@@ -6,8 +6,8 @@
 </p>
 
 <p>
-  <strong>Image:</strong>
-  <%= @product.image %>
+  <!-- <strong>Image:</strong> -->
+  <%= image_tag @product.image, size: '300x300' %>
 </p>
 
 <p>
@@ -24,4 +24,5 @@
 <%= link_to 'Back', products_path %>
 <% else %>
 <%= link_to 'Back', products_path %>
+<%#<%= link_to 'Comprar', %>
 <% end %>

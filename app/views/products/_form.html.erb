@@ -19,7 +19,7 @@
 
   <div class="field">
     <%= form.label :image %>
-    <%= form.text_field :image, id: :product_image %>
+    <%= form.file_field :image, id: :product_image %>
   </div>
 
   <div class="field">
@@ -28,8 +28,8 @@
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description, id: :product_description %>
+    <%= form.label :description %>    
+    <%= form.text_area :description, id: :product_description %>
   </div>
 
   <div class="actions">
