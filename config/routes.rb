@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+  get 'orders/create'
+
   devise_for :users, controllers: {
         sessions: 'users/sessions'
       }
-  resources :products
+  resources :products do
+    resources :orders, only: :create
+  end
 
+  resources :orders
+  
   get 'pages/index'
   get 'pages/contact'
 

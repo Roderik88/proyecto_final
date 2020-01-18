@@ -11,4 +11,7 @@ class User < ApplicationRecord
   end
 
   enum role: [ :admin, :visit]
+
+  has_many :orders
+  has_many :products, through: :orders
 end
