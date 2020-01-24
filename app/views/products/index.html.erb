@@ -1,20 +1,20 @@
-<div class="container-fluid">
+<div class="container-fluid ">
   <h1>Productos</h1>
-<% if user_signed_in? && current_user.admin? %>
-<%= link_to 'New Product', new_product_path, class: 'btn btn-primary' %>
-<% end %>
-<br>
-
-<div class="container-fluid">
-  <div class="row">
-    <% @products.each_slice(4) do |row| %>
-      <% row.each do |product| %>
-        <div class="col-3">
-          <div class="card">
-            <div class="card-body">
-              <p> <%= image_tag product.image, size: '200x200'%> </p>
-              <h5> <%= product.name %> </h5>
-              <p> $ <%= product.price %> </p>
+  <% if user_signed_in? && current_user.admin? %>
+  <%= link_to 'New Product', new_product_path, class: 'btn btn-primary' %>
+  <% end %>
+  <br>
+  <h2><em>Cada uno de nuetros productos tiene un tiempo de preparacion; para garantizar un mejor servicio, verifique el tiempo de preparacion de cada producto.</em></h2>
+  <div class="container-fluid">
+    <div class="row">
+      <% @products.each_slice(4) do |row| %>
+        <% row.each do |product| %>
+          <div class="col-12 col-sm-3">
+            <div class="card my-2">
+              <div class="card-body">
+                <p> <%= image_tag product.image, size: '200x200'%> </p>
+                <h5> <%= product.name %> </h5>
+                <p> $ <%= product.price %> </p>
               <% if user_signed_in? && current_user.admin? %>
                 <%= link_to 'Show', product %>
                 <%= link_to 'Edit', edit_product_path(product) %>
@@ -29,12 +29,13 @@
                   <% end %>
                   <% else %>
                     <%= link_to 'Show', product %>
-              <% end %>
+                  <% end %>
+              </div>
             </div>
           </div>
-        </div>
+        <% end %>
+        <div class="w-100" style="margin-top:20px;"> </div>
       <% end %>
-      <div class="w-100" style="margin-top:20px;"> </div>
-    <% end %>
+    </div>
   </div>
 </div>

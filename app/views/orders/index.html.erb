@@ -1,14 +1,23 @@
-<table class="table">
-  <% @orders.each do |order|%>
-  <tr>
-    <td><%= order.product.name %></td>
-    <td><%= order.product.price %></td>
-    <td><%= link_to 'Eliminar', order_path(order), method: :delete %></td>
-  </tr>
-  <% end %>
-  <tr>
-    <td> Total : </td>
-    <td> <%= @orders.map {|order| order.product.price }.sum %></td>
-    <td> Pagar </td>
-  </tr>
-</table>
+<div class="container-fluid">
+
+  <table class="table">
+    <% @orders.each do |order|%>
+    <tr>
+      <td><%= order.product.name %></td>
+      <!-- <td><select>
+        <%# 50.times do |i|%>
+            <option value="<%#= i+1 %>"><%#= i+1 %></option>
+            <%# end %>
+          </select> -->
+        </td>
+      <td><%= order.product.price %></td>
+      <td><%= link_to 'Eliminar', order_path(order), method: :delete %></td>
+    </tr>
+    <% end %>
+    <tr>
+      <td> Total : </td>
+      <td> <%= @orders.map {|order| order.product.price }.sum %></td>
+      <td> Pagar </td>
+    </tr>
+  </table>
+</div>
