@@ -17,6 +17,9 @@ gem 'cancancan'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
 gem 'paypal-sdk-rest'
+gem 'gmaps4rails'
+gem 'omniauth-facebook'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
