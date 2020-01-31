@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   get 'orders/create'
 
   devise_for :users, controllers: {
-        sessions: 'users/sessions'
+        sessions: 'users/sessions',
+        
+        omniauth_callbacks: "users/omniauth_callbacks"
       }
   resources :products do
     resources :orders, only: :create

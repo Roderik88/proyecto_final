@@ -1,0 +1,20 @@
+<div style='width: 400px;'>
+  <div id="map" style='width: 400px; height: 200px;'></div>
+</div>
+<script>
+    handler = Gmaps.build('Google');
+    handler.buildMap({
+      provider: {
+        center: new google.maps.LatLng({lat: -34.178742, lng:  -70.712751}),
+        zoom: 15
+      },
+      internal: {
+        id: 'map'
+      }
+    },
+    function(){
+      markers = handler.addMarkers(<%=raw @hash.to_json %>);
+      }
+    );
+
+</script>

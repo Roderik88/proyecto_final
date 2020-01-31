@@ -1,0 +1,13 @@
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/json-2.3.0/ext/json
+/usr/share/rvm/rubies/ruby-2.4.1/bin/ruby -I /usr/share/rvm/rubies/ruby-2.4.1/lib/ruby/site_ruby/2.4.0 -r ./siteconf20200131-5636-n1iyiu.rb extconf.rb
+creating Makefile
+
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/json-2.3.0/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/json-2.3.0/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/rodrigo/Desktop/viernes10/proyecto1/vendor/bundle/gems/json-2.3.0/ext/json
+make "DESTDIR=" install
