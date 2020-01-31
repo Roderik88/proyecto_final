@@ -1,5 +1,7 @@
 {
   "name": "proyecto1",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "underscore": "^1.9.2"
+  }
 }

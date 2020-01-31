@@ -4,6 +4,7 @@ class OrdersController < ApplicationController
   def create
     @product = Product.find(params[:product_id])
     @order = Order.new(product: @product, user: current_user)
+    @order.price = @product.price
     if @order.save
       redirect_to products_path, notice: 'orden ingresada'
     else

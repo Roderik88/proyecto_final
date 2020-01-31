@@ -8,6 +8,7 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
+gem 'jquery-rails'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -16,6 +17,11 @@ gem 'devise'
 gem 'cancancan'
 gem 'carrierwave', '~> 2.0'
 gem 'mini_magick'
+gem 'mercadopago-sdk'
+gem 'paypal-sdk-rest'
+gem 'gmaps4rails'
+gem 'omniauth-facebook'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

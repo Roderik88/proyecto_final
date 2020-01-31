@@ -10,21 +10,22 @@
     <div class="row h-100 align-items-center">
       <div class="col-lg-12">
         <h1 class="display-4 text-black mt-5 mb-2">La tienda de la esquina</h1>
-        <p class="lead mb-5 text-red-50"> eso, en la esquina</p>
+        <p class="lead mb-5 text-red-50"> Eso, en la esquina</p>
       </div>
     </div>
   </div>
 </header>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container-fluid">
 
   <div class="row">
     <div class="col-md-8 mb-5">
       <h2>Que hacemos</h2>
       <hr>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+      <p><em>Somos una pastelería de delicadeces que prepara dulces de complejo trabajo, utilizando los productos mas frescos que se puedan obtener. Nos enfocamos en la preparación de dulces, pasteles, bizcochos, brownis y mas.</em></p>
+      <p>Pero, que nos diferencia del resto; “la frescura de nuestros productos”. Cada producto se prepara por pedido, garantizando una frescura absoluta, y entregado al siguiente día, o cuando su sabor este en el momento mas perfecto. </p>
+      <%= render 'partials/maps'%>
       <!--
       <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a> -->
     </div>
@@ -32,13 +33,13 @@
       <h2>Contactenos</h2>
       <hr>
       <address>
-        <strong>Puede visitarnos en</strong>
+        <strong>Visitanos</strong>
         <br>123 en la esquina
         <br>Rancagua, VI 2820000
         <br>
       </address>
       <address>
-        <abbr title="Phone">P:</abbr>
+        <abbr title="Phone">T:</abbr>
         (123) 456-7890
         <br>
         <abbr title="Email">E:</abbr>
@@ -48,27 +49,8 @@
   </div>
 
 <!-- carrusel -->
-  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="3000">
-        <img src="<%= asset_path('panqueques.jpeg') %>" class="d-block w-100" alt="panqueques">
-    </div>
-    <div class="carousel-item"  data-interval="3000">
-      <img src="<%= asset_path('pie_limon.jpg') %>" class="d-block w-100" alt="pie limon">
-    </div>
-    <div class="carousel-item"  data-interval="3000">
-      <img src="<%= asset_path('POMPADOUR-2.jpg') %>" class="d-block w-100" alt="torta pompadour">
-    </div>
-    <div class="carousel-item"  data-interval="3000">
-      <img src="<%= asset_path('cookies.jpeg') %>" class="d-block w-100" alt="galletas">
-    </div>
-  </div>
+ <%= render 'partials/carrusel' %>
 
 </div>
-</div>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </html>
