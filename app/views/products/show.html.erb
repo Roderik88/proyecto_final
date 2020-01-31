@@ -1,27 +1,27 @@
 <div class="container-fluid">
-  <p>
-    <strong>Name:</strong>
-    <%= @product.name %>
-  </p>
+
+    <strong>Nombre:</strong>
+    <h3> <%= @product.name %> </h3>
+
 
   <p>
     <!-- <strong>Image:</strong> -->
     <%= image_tag @product.image, size: '300x300' %>
   </p>
 
-  <p>
-    <strong>Price:</strong>
-    <%= @product.price %>
-  </p>
+
+    <strong>Precio:</strong>
+     <h4> <%= @product.price %> </h4>
+
 <p>
   <!-- <strong>Tiempo de preparacion</strong> -->
   <%#= @product.time %>
 </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @product.description %>
-  </p>
+
+    <strong>Descripcion:</strong>
+    <h4><em> <%= @product.description %> </em></h4>
+
   <% if user_signed_in? && current_user.admin? %>
   <%= link_to 'Edit', edit_product_path(@product) %> |
   <%= link_to 'Back', products_path %>
